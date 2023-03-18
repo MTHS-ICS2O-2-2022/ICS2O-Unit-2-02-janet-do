@@ -1,21 +1,18 @@
 // Created by: Janet Do
 // Created on: Sep 2020
 //
-// This program does basic math
+// This program does Area and Perimeter
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 func main() {
-	// This function does basic math
-	fmt.Println("9 + 2 = ", (9 + 2))
-	fmt.Println("7 - 3 = ", (7 - 3))
-	fmt.Println("4 * 2 = ", (4 * 2))
-	fmt.Println("4 + 4 / 2 = ", (4 + (4 / 2)))
-	fmt.Println("5 + 2³ = ", (5 + math.Pow(2, 3)))
+	length := 5.0
+	width := 3.0
 
-	fmt.Println("\nDone.")
+	area := length * width
+	perimeter := 2 * (length + width)
+
+	fmt.Printf("Area: %.2f cm²\n", area)
+	fmt.Printf("Perimeter: %.2f cm\n", perimeter)
 }
